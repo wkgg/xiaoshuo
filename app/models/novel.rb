@@ -10,7 +10,6 @@ class Novel < ActiveRecord::Base
         title = link.text
         id = /第(.+?)章/.match(title)[1]
         if node = link.click.search("//div[@class='d_post_content j_d_post_content ']").first
-          binding.pry
           content = node.text
           @chapter = self.chapters.create(title:title, chapter_id: id, content: content)
         end

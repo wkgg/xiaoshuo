@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20140305161005) do
     t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "novel_id"
   end
 
 end
