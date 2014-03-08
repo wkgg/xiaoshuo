@@ -1,0 +1,10 @@
+<html>
+  <title>xiaoshuo</title>
+  <body>
+    <div class="row text-center">
+      <%@novel.chapters.each do |chapter| %>
+          <div class="span6"><%=link_to "#{chapter.title}", "/chapters/#{chapter.id}" %></div>
+      <%end%>
+    </div>
+  </body>
+</html>

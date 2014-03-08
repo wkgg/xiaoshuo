@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta content="text/html;charset=gbk" http-equiv="content-type">
+  </head>
+  <title>
+    chapters  
+  </title>
+  <body>
+    <div class="text-center">
+      <%=@chapter.title %>
+    </div>
+    <div class="text-center">
+      <%=@chapter.content %>
+    </div>
+
+    <div>
+      <%if @chapter.previous%>
+      <%=link_to '上一章', "/chapters/#{@chapter.previous.id}"%>
+      <%end%>
+    </div>
+    <div>
+      <%if @chapter.next%>
+        <%=link_to '下一章', "/chapters/#{@chapter.next.id}"%>
+      <%end%>
+    </div>
+
+  </body>
+
+</html>
