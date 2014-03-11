@@ -19,8 +19,8 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql
-  encoding: utf-8
+  adapter: mysql2
+  encoding: utf8
   reconnnect: false
   database: xiaoshuo
   username: xiaoshuo
